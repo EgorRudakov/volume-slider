@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Volume slider</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h2 class="rangeValue" id="rangeValue"></h2>
+			<div class="slider">
+				<output class="output-power" for="fader" id="volume">0</output>
+				<input
+					class="fader"
+					type="range"
+					id="fader"
+					value="0"
+					min="0"
+					max="600"
+					value="0"
+					step="1"
+					onchange="(this.value)"
+				/>
+			</div>
+		</div>
+		<script type="module" src="./js/index.js"></script>
+	</body>
+</html>
