@@ -1,5 +1,7 @@
 import data from "./data.js";
 
+//У тебя слишком длинные комментарии. Не стесняйся переносить!!!
+
 // Добавляем обработчик события input к элементу range. Когда пользователь перемещает ползунок, функции calculateValue и updateBackground вызываются для вычисления значения value и обновления свойства background элемента range
 data.range.addEventListener("input", () => {
 	const result = calculateValue(data.range);
